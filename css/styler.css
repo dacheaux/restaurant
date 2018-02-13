@@ -1,0 +1,251 @@
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato-regular.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/lato-bold.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('Libre-Baskerville'), url(../fonts/LibreBaskerville-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Libre Baskerville'), local('Libre-Baskerville'), url(../fonts/LibreBaskerville-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('Libre-Baskerville'), url(../fonts/LibreBaskerville-Italic.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: local('Font Awesome'), local('Font-Awesome'), url(../fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2) format('ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    color: #605E5E;
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header, .main-content, footer {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 125px;
+    text-align: center;
+}
+
+.address {
+  position: absolute;
+  top: .5rem;
+  left: 3.5rem;
+}
+
+.address span {
+  letter-spacing: .04rem;
+  font-size: .8rem;
+}
+
+h1, h4 {
+  color: rgba(188, 155, 93, 1);
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  letter-spacing: .2rem;
+}
+
+h1 {
+  margin: .5rem;
+}
+
+h4 {
+  letter-spacing: .04rem;
+}
+
+nav ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: table-cell;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #605E5E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('../images/parallax1.webp');
+    height: 325px;
+}
+
+.bgimg-2 {
+    clear: both;
+    background-image: url('../images/parallax2.webp');
+    height: 325px;
+}
+
+.content {
+  height: 100%;
+}
+
+.main-content {
+  position: relative;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    float: left;
+    /*padding: 2em;*/
+}
+
+.element {
+  padding: 1rem .5em 0;
+}
+
+.element:nth-child(3) {
+  padding-bottom: 1rem;
+}
+
+.element h6, .element h4 {
+  margin: 0;
+  padding: .25em;
+}
+
+h4 {
+  font-size: 2rem;
+  padding: 0;
+  font-style: italic;
+}
+
+.element h4 {
+  padding-left: 0;
+}
+
+.element h6 {
+  letter-spacing: .2rem;
+  padding-bottom: 0;
+}
+
+.element p {
+  margin: 0;
+}
+
+.impression {
+  position: relative;
+  clear: both;
+}
+
+.notion h6 {
+  color: #605E5E;
+  margin: 2rem 0 0;
+  letter-spacing: .2rem;
+}
+
+.notion h4 {
+  margin: .5rem 0 2rem;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: white;
+  letter-spacing: .5rem;
+}
+
+.middle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.notion {
+  text-align: center;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(188, 155, 93, 1); 
+}
+
+
+/* .left {
+    left: 25px;
+    width: 445px;
+}
+
+.right {
+    left: 525px;
+    width: 435px;
+} */
